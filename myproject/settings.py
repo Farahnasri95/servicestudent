@@ -81,7 +81,7 @@ import os
 
 DATABASES = {
     'default': dj_database_url.parse(
-        os.environ.get("postgresql://student_service_510z_user:da0CPXtOatR0TaOMnrxTZRujI3oMmCOf@dpg-d4io2j0gjchc73eqgucg-a/student_service_510z"),
+        os.environ.get("DATABASE_URL"),
         conn_max_age=600,
         ssl_require=True
     )

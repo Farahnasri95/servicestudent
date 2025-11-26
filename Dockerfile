@@ -11,3 +11,4 @@ RUN python manage.py collectstatic --noinput  # Fichiers static
 EXPOSE 8000                   
 # Port d'exposition 
 CMD ["gunicorn", "djangoproject_git.wsgi:application", "--bind", "0.0.0.0:8000"]  # Démarrage 
+ENV DATABASE_URL=postgres://student_service_510z_user:da0CPXtOatR0TaOMnrxTZRujI3oMmCOf@dpg-d4io2j0gjchc73eqgucg-a/student_service_510z
