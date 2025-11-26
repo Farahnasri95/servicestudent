@@ -7,3 +7,4 @@ services:
 # Environnement 
    buildCommand: "./build.sh"  # Commande de construction 
    startCommand: "gunicorn myproject.wsgi:application" # Commande de démarrage 
+   
