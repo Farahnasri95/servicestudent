@@ -74,16 +74,18 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-import os
+
 import dj_database_url
+import os
 
 DATABASES = {
     'default': dj_database_url.parse(
-        os.environ.get("postgres://student_service_510z_user:da0CPXtOatR0TaOMnrxTZRujI3oMmCOf@dpg-d4io2j0gjchc73eqgucg-a:5432/student_service_510z"),
+        os.environ.get("postgresql://student_service_510z_user:da0CPXtOatR0TaOMnrxTZRujI3oMmCOf@dpg-d4io2j0gjchc73eqgucg-a/student_service_510z"),
         conn_max_age=600,
         ssl_require=True
     )
 }
+
 
 
 
